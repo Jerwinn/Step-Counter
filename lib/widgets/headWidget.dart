@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+///This class is used to help format a toolbar.
+///However currently it is just used to display the date.
+
 class Header extends StatelessWidget {
   String text;
   Function onPress;

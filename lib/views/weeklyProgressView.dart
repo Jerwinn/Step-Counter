@@ -2,6 +2,10 @@ import 'package:dissertation_project/widgets/progressCircleWidget.dart';
 import 'package:flutter/material.dart';
 import 'package:dissertation_project/widgets/textFormatWidget.dart';
 
+///This class is used to show the weekly progress of the users.
+///It uses a card view to show the weekly progress through
+///activity rings.
+
 class WeeklyProgress extends StatelessWidget {
   const WeeklyProgress({Key? key}) : super(key: key);
 
@@ -27,7 +31,7 @@ class WeeklyProgress extends StatelessWidget {
               padding: const EdgeInsets.all(8.0),
               child: Align(
                   alignment: Alignment.centerLeft,
-                  child: TextFormatWidget(20, "Daily average :")),
+                  child: TextFormatWidget(20, "Week Progress:")),
             ),
             const SizedBox(
               height: 10,
@@ -39,13 +43,14 @@ class WeeklyProgress extends StatelessWidget {
                     const SizedBox(
                       width: 5,
                     ),
-                    ProgressCircle("Mon", 0.7, Colors.red),
-                    ProgressCircle("Tue", 0.1, Colors.cyan),
+                    //activity rings used here to show weekly activity.
+                    ProgressCircle("Mon", 0.7, Colors.purple),
+                    ProgressCircle("Tue", 0.1, Colors.indigo),
                     ProgressCircle("Wed", 0.2, Colors.teal),
-                    ProgressCircle("Thur", 0.3, Colors.amber),
+                    ProgressCircle("Thur", 0.3, Colors.orange),
                     ProgressCircle("Fri", 0.4, Colors.green),
-                    ProgressCircle("Sat", 0.5, Colors.indigo),
-                    ProgressCircle("Sun", 0.6, Colors.purple),
+                    ProgressCircle("Sat", 0.5, Colors.blue),
+                    ProgressCircle("Sun", 0.6, Colors.red),
                   ],
                 ),
               ),

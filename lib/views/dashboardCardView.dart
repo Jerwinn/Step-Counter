@@ -4,12 +4,14 @@ import 'package:flutter/material.dart';
 import 'package:dissertation_project/widgets/textFormatWidget.dart';
 import 'package:dissertation_project/widgets/imageViewWidget.dart';
 
+///This class is made to show the dashboard view of the app.
+///This consist of showing the steps performed, calories and the distance.
+
 class DashboardCardView extends StatelessWidget {
   int steps;
   double miles;
   double calories;
   double duration;
-
 
   DashboardCardView(this.steps, this.miles, this.calories, this.duration,
       {Key? key})
@@ -29,6 +31,7 @@ class DashboardCardView extends StatelessWidget {
           color: const Color(0xff3d3d3d),
           borderRadius: BorderRadius.circular(10),
         ),
+
         child: Column(
           children: [
             const FittedBox(
@@ -46,11 +49,10 @@ class DashboardCardView extends StatelessWidget {
                         ),
                         // this is for the count in foot step and edit button
                         SizedBox(
-
                           width: 300,
                           child: Row(
-
                             children: [
+                              //This shows the steps counted
                               TextFormatWidget(50, steps.toString()),
                               const SizedBox(
                                 height: 10,
@@ -59,12 +61,12 @@ class DashboardCardView extends StatelessWidget {
                             ],
                           ),
                         ),
-                        // this is for the pause button
+
                         Align(
-                          alignment: Alignment.center,
+                          alignment: Alignment.centerLeft,
                           child: SizedBox(
                             height: 40,
-                            width: 400,
+                            width: 300,
                             child: Center(
                               child: Text(
                                 "Steps Performed",
@@ -89,6 +91,8 @@ class DashboardCardView extends StatelessWidget {
             const SizedBox(
               height: 80,
             ),
+            ///Show the distance travelled in miles and calories burned.
+            ///Along with the icons used.
             Row(
               children: [
                 const SizedBox(

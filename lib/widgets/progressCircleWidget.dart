@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:dissertation_project/widgets/textFormatWidget.dart';
 import 'package:percent_indicator/percent_indicator.dart';
 
+///This class is made to show the progress of a person throughout the week.
+
 class ProgressCircle extends StatelessWidget {
   String day;
   double percentage;

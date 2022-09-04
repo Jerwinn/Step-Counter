@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+///This class is made so that the text around the application is identical
+///so that the layout is consistent.
+
 class TextFormatWidget extends StatelessWidget {
   double fontSize;
   String titleText;

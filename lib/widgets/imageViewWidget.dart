@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:dissertation_project/widgets/textFormatWidget.dart';
 
+///This class is used to allow for images to be exported.
+///It allows for the image to then be formatted.
+
 class ImageView extends StatelessWidget {
   String imagePath;
   String number;
